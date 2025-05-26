@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+<div class="modal" id="quoteModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Request a Quote</h2>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="quoteName">Full Name*</label>
+                <input type="text" id="quoteName" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteEmail">Email*</label>
+                <input type="email" id="quoteEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="quotePhone">Phone*</label>
+                <input type="tel" id="quotePhone" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteCompany">Business Name</label>
+                <input type="text" id="quoteCompany">
+            </div>
+            <div class="form-group">
+                <label for="quoteIndustry">Industry*</label>
+                <select id="quoteIndustry" required>
+                    <option value="">Select...</option>
+                    <option value="restaurant">Restaurant/Catering</option>
+                    <option value="hotel">Hotel/Hospitality</option>
+                    <option value="supermarket">Supermarket/Retail</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quoteProducts">Products Needed*</label>
+                <textarea id="quoteProducts" placeholder="e.g., 10x Industrial Degreaser, 5x Floor Scrubbers..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="quoteNotes">Additional Notes</label>
+                <textarea id="quoteNotes" placeholder="Delivery requirements, preferred brands, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
